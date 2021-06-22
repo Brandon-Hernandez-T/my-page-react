@@ -11,7 +11,9 @@ const NavbarComponent = () => {
                 <Nav.Link>
                     <Link to="/dashboard" > Inicio </Link>
                 </Nav.Link>
-                <Nav.Link href="#features">API</Nav.Link>
+                <Nav.Link>
+                <Link to="/api" > Api </Link>
+                </Nav.Link>
                 <Nav.Link href="/">Log out</Nav.Link>
             </Nav>
         </Navbar>
