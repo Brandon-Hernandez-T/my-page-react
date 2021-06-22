@@ -1,0 +1,13 @@
+.contenedor-especie{
+    border-width: 1;
+    border-color: blue;
+}
+.contenedor-cards {
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+.contenedor-paginacion {
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
