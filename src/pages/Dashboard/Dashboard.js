@@ -17,7 +17,9 @@ const Dashboard = (props) => {
 
     return (
         <div>
-            <NavbarComponent />
+            <NavbarComponent
+            props={props}
+            />
 
             <div className="contenedor" >
                 <div className="banner-bienvenida" >

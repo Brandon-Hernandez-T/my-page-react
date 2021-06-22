@@ -10,8 +10,10 @@ const RickAndMorty = (props) => {
 
     return (
         <div>
-            <NavbarComponent/>
-            
+            <NavbarComponent
+            props={props}
+            />
+
             <div style={{ position: 'absolute' }} >
                 <Alert variant='danger' show={esAlerta} dismissible={true} onClose={() => setEsAlerta(false) } >
                     Usuario y/o contraseña incorrectos

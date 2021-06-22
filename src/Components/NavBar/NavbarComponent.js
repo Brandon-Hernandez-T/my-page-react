@@ -1,20 +1,22 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './NavbarComponent.css';
 
-const NavbarComponent = () => {
+const NavbarComponent = ({props}) => {
+
+    const { location } = props;
 
     return (
         <Navbar variant="dark" style={{ color: 'white', backgroundColor: 'black', }} >
             <Navbar.Brand href="/">Brandon</Navbar.Brand>
-            <Nav>
-                <Nav.Link>
-                    <Link to="/dashboard" > Inicio </Link>
+            <Nav  >
+                <Nav.Link className="nav-link" active={ location.pathname == "/dashboard" ? true : false }  >
+                    <Link to="/dashboard" className="nav-link" > Inicio </Link>
                 </Nav.Link>
-                <Nav.Link>
-                <Link to="/api" > Api </Link>
+                <Nav.Link className="nav-link" active={ location.pathname == "/api" ? true : false } >
+                    <Link to="/api" className="nav-link" > Api </Link>
                 </Nav.Link>
-                <Nav.Link href="/">Log out</Nav.Link>
             </Nav>
         </Navbar>
         // <Nav className="justify-content-center" activeKey="/dashboard" style={{ backgroundColor: 'transparent', }} >
