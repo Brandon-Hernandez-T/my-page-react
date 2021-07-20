@@ -5,6 +5,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import Login from './pages/Login/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
 import RickAndMorty from './pages/RickandMorty/RickAndMorty';
+import Tareas from './pages/Tareas/Tareas';
 import Notfound from './pages/NotFound/Notfound';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" name="Login" render={props => <Login {...props} />} />
         <Route exact path="/dashboard" name="Dashboard" render={props => <Dashboard {...props} />} />
         <Route exact path="/api" name="Api" render={props => <RickAndMorty {...props} />} />
+        <Route exact path="/tareas" name="Tareas" render={props => <Tareas {...props} />} />
         <Route component={Notfound} />
       </Switch>
     </HashRouter>

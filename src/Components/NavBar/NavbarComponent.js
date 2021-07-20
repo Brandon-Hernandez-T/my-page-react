@@ -17,26 +17,11 @@ const NavbarComponent = ({props}) => {
                 <Nav.Link className="nav-link" active={ location.pathname == "/api" ? true : false } >
                     <Link to="/api" className="nav-link" > Api </Link>
                 </Nav.Link>
+                <Nav.Link className="nav-link" active={ location.pathname == "/tareas" ? true : false } >
+                    <Link to="/tareas" className="nav-link" > Tareas </Link>
+                </Nav.Link>
             </Nav>
         </Navbar>
-        // <Nav className="justify-content-center" activeKey="/dashboard" style={{ backgroundColor: 'transparent', }} >
-        //     <Nav.Item>
-        //         <Nav.Link eventKey="link-1">
-        //             <Link to="/dashboard" > Inicio </Link>
-        //         </Nav.Link>
-        //     </Nav.Item>
-        //     <Nav.Item>
-        //         <Nav.Link eventKey="link-1">Link</Nav.Link>
-        //     </Nav.Item>
-        //     <Nav.Item>
-        //         <Nav.Link eventKey="link-2">Link</Nav.Link>
-        //     </Nav.Item>
-        //     <Nav.Item>
-        //         <Nav.Link eventKey="disabled" disabled>
-        //             Disabled
-        //         </Nav.Link>
-        //     </Nav.Item>
-        // </Nav>
     );
 };
 
